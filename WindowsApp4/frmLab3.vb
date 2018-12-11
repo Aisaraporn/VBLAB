@@ -93,8 +93,7 @@
     Private Sub btnDown_Click(sender As Object, e As EventArgs) Handles btnDown.Click
         txtInput.Text = Val(txtInput.Text) - 2
     End Sub
-
-    Private Sub cboZize_SelectedIndexChanged(sender As Object, e As EventArgs)
-        txtInput.Font = New Font(txtInput.Font.Name, cboZize.SelectedItem, FontStyle.Regular)
+    Private Sub cboSize_SelectedIndexChanged_1(sender As Object, e As EventArgs) Handles cboSize.SelectedIndexChanged
+        txtInput.Font = New Font(txtInput.Font.Name, cboSize.SelectedItem, FontStyle.Regular)
     End Sub
 End Class

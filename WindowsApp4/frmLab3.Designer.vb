@@ -49,7 +49,7 @@ Partial Class frmLab3
         Me.lblBYellow = New System.Windows.Forms.Label()
         Me.lblBGreen = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cboSize = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -65,21 +65,23 @@ Partial Class frmLab3
         '
         'btnUp
         '
+        Me.btnUp.BackColor = System.Drawing.Color.Yellow
         Me.btnUp.Location = New System.Drawing.Point(564, 74)
         Me.btnUp.Name = "btnUp"
         Me.btnUp.Size = New System.Drawing.Size(75, 23)
         Me.btnUp.TabIndex = 1
         Me.btnUp.Text = "+"
-        Me.btnUp.UseVisualStyleBackColor = True
+        Me.btnUp.UseVisualStyleBackColor = False
         '
         'btnDown
         '
+        Me.btnDown.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.btnDown.Location = New System.Drawing.Point(564, 104)
         Me.btnDown.Name = "btnDown"
         Me.btnDown.Size = New System.Drawing.Size(75, 23)
         Me.btnDown.TabIndex = 2
         Me.btnDown.Text = "-"
-        Me.btnDown.UseVisualStyleBackColor = True
+        Me.btnDown.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -299,14 +301,14 @@ Partial Class frmLab3
         Me.Label22.TabIndex = 7
         Me.Label22.Text = "กำหนดตัวเลข"
         '
-        'ComboBox1
+        'cboSize
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"12", "14", "16", "18", "20", "22", "24", "26", "28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50"})
-        Me.ComboBox1.Location = New System.Drawing.Point(446, 153)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 8
+        Me.cboSize.FormattingEnabled = True
+        Me.cboSize.Items.AddRange(New Object() {"12", "14", "16", "18", "20", "22", "24", "26", "28", "30", "32", "34", "36", "38", "40", "42", "44", "46", "48", "50"})
+        Me.cboSize.Location = New System.Drawing.Point(446, 153)
+        Me.cboSize.Name = "cboSize"
+        Me.cboSize.Size = New System.Drawing.Size(121, 21)
+        Me.cboSize.TabIndex = 8
         '
         'Label2
         '
@@ -324,7 +326,7 @@ Partial Class frmLab3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(860, 453)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cboSize)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -369,6 +371,6 @@ Partial Class frmLab3
     Friend WithEvents lblBGreen As Label
     Friend WithEvents Label22 As Label
     Friend WithEvents lblBBrown As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cboSize As ComboBox
     Friend WithEvents Label2 As Label
 End Class
