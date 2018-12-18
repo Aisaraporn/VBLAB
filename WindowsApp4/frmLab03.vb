@@ -1,5 +1,4 @@
-﻿Public Class frmLab3
-
+﻿Public Class frmLab03
     Private Sub lblFRed_Click(sender As Object, e As EventArgs) Handles lblFRed.Click
         txtInput.ForeColor = Color.Red
     End Sub
